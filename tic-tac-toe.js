@@ -77,7 +77,7 @@ function playTurn(player) {
             markBoard(result.position, player);
             printBoard();
             if (checkWin(player) === true) {
-                console.log('Winner Winner!');
+                console.log('You won the game!');
                 return;
             }
             if (checkTie() === true) {
@@ -85,7 +85,7 @@ function playTurn(player) {
                 return;
             }
             if (player === 'X') {
-                playTurn('O');
+                playTurn('Z');
             } else {
                 playTurn('X');
             }
